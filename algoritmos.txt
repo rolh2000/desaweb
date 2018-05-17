@@ -1,0 +1,143 @@
+
+
+//***** Algoritmo 2  *****
+var p1 = 8;
+
+var p2 = 10;
+
+var p3 = 8.9;
+
+var examen = 8.9;
+
+var trabajof = 9.5;
+
+var prom1 = ((p1 + p2 +p3)/3)*.55; 
+
+var promf = (prom1 + (examen * 0.30) + (trabajof * 0.15));
+
+alert(promf);
+
+
+
+//***** Algoritmo 3  *****
+var nombre = "Juan Canitas";
+
+var thoras = 78;
+
+var pagohr = 41.666;
+
+var sueldo = pagohr * thoras;
+
+alert("sueldo " + sueldo);
+
+alert("Nombre " + nombre);
+
+
+//***** Algoritmo 8  *****
+var numero1 = 20;
+var numero2 = 78;
+var numero3 = 15;
+//var numero1 = 20;
+//var numero2 = 38;
+//var numero3 = 58;
+
+
+if (numero1 == numero2 + numero3) {
+  alert("numero1 es la suma de numero2 y numero3");
+} 
+else if(numero2 == numero1 + numero3) {
+  alert("numero2 es la suma de numero1 y numero3");
+}
+else if(numero3 == numero1 + numero2) {
+  alert("numero3 es la suma de numero1 y numero2");
+}
+else
+  alert("Ningún numero es la suma de los otros dos");
+
+
+//***** Algoritmo 9  *****
+var numero = 180
+;
+//var numero = 155
+;
+//var numero = 15
+;
+if (numero>100 && numero<=200) {
+	
+	if(numero % 3 == 0)
+
+		alert(numero + " es multiplo de 3 y está dentro del rango");
+	
+	else
+	
+		alert(numero + " no es múltiplo de 3 pero está dentro del rango");
+
+}
+
+else
+	alert(numero + " no está dentro del rango");
+
+//***** Algoritmo 41  *****
+
+var k 		= 0.0;
+
+var i 		= 1 ;
+
+var pago 	= 0.0;
+
+var cambio 	= 0.0;
+
+var monto 	= 0.0;
+
+var iva 	= 0.0;
+
+var monto2 	= 0.0;
+
+while(i != 0){
+	
+	//
+	
+	monto = prompt("Dame precio producto","");
+	
+	iva = (monto * 0.16);
+	
+	monto2 = (monto + iva);
+	
+	//
+	
+	alert("El IVA es: " + iva);
+	
+	//
+	
+	alert("El total a pagar es: ");
+	
+	alert(monto2);
+	
+	//
+	
+	pago = prompt("Dame monto de pago","");
+	
+	if(pago > monto2) {
+		
+		cambio = pago - monto2;
+		
+		//
+	
+		alert("Su cambio es: ") ;
+	
+		alert(cambio) ;
+	
+	}
+	k = k + monto2;
+	
+	i = i + 1;
+	
+	i = prompt('Si desea terminar oprima "0"','');
+
+	//
+
+}
+
+alert ("El total en caja es: ");
+alert (k);
+
